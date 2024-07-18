@@ -8,15 +8,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # instagram user for instaloader
-USER = os.getenv('INSTAGRAM_USER_1') # to read from .env file
-PASS = os.getenv('INSTAGRAM_PASS_1')
+USER = os.getenv('INSTAGRAM_USER_1', 'silent_ghost_0102') # to read from .env file
+PASS = os.getenv('INSTAGRAM_PASS_1', 'insta@123')
 
 # env variables
-bot_token = os.getenv('BEST_INSTAGRAM_DOWNLOADER_BOT_API')
-log_channel_id = os.getenv('LOG_CHANNEL_ID') # set to False if not needed
+bot_token = os.getenv('BEST_INSTAGRAM_DOWNLOADER_BOT_API', '7491863909:AAG6k3Jgjn4EnvjRdVGe2rcHM9Jw_i686HE')
+log_channel_id = os.getenv('LOG_CHANNEL_ID', '-1002016803498') # set to False if not needed
 
 # settings
-bot_username = "@Best_Instagram_Downloader_Bot"
+bot_username = "@Public_Insta_Downloader_Bot"
 caption_trail = "\n\n\n" + bot_username
 session_file_name = "session" # any name change should apply to .gitignore too
 
